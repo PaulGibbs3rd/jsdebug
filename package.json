@@ -1,0 +1,27 @@
+{
+  "name": "react-lit-ts-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:github": "cross-env BUILD_TARGET=github vite build",
+    "deploy": "npm run build:github && gh-pages -d dist",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@arcgis/core": "^4.32.10",
+    "@arcgis/map-components": "^4.32.14",
+    "lit": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.126",
+    "@vitejs/plugin-react": "^4.5.1",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
